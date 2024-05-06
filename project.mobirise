@@ -3,8 +3,8 @@
     "name": "Garage Cars",
     "currentPage": "index.html",
     "theme": {
-      "name": "mobirise5",
-      "title": "Mobirise 5",
+      "name": "mobirise4",
+      "title": "Mobirise 4",
       "styling": {
         "primaryColor": "#ff0000",
         "secondaryColor": "#ff0000",
@@ -24,19 +24,17 @@
         "display4Font": "Calistoga",
         "display4Size": 1.1,
         "isRoundedButtons": true,
-        "isGhostButtonBorder": true,
-        "underlinedLinks": true,
         "isAnimatedOnScroll": true,
         "isScrollToTopButton": true
       },
       "additionalSetColors": [
+        "#000326",
+        "#000651",
+        "#e32020",
+        "#4c0013",
         "#ff0000",
         "#000328",
-        "#012c00",
-        "#064800",
-        "#000217",
-        "#fdff00",
-        "#011e00"
+        "#012c00"
       ]
     },
     "path": "@PROJECT_PATH@",
@@ -75,7 +73,7 @@
     ],
     "imageResize": false,
     "favicon": "@PROJECT_PATH@/assets/images/favicon-garagecars-60x60.png",
-    "mbrsiteDomain": "rnb1pjupeb",
+    "mbrsiteDomain": "a6ai7cawqy",
     "usedWebp": false,
     "robotsSwitcher": false,
     "sitemapSwitcher": false,
@@ -85,10 +83,10 @@
     "gdpr": false,
     "witsec-search": false,
     "witsec-white-label": true,
-    "witsec-jquery": "1.11.2",
+    "witsec-jquery": "3.6.0",
     "witsec-mailform": true,
     "site_lang": "vi",
-    "uniqCompNum": 5,
+    "uniqCompNum": 8,
     "versionPublish": "5.9.18",
     "screenshot": "screenshot.png",
     "witsec-mailform-to": "Webmaster@EZtech.OOO",
@@ -121,7 +119,9 @@
     "witsec-mailform-attachments-mimetypes": "application/gzip\napplication/java-archive\napplication/json\napplication/ld+json\napplication/msword\napplication/ogg\napplication/pdf\napplication/rtf\napplication/vnd.amazon.ebook\napplication/vnd.api+json\napplication/vnd.apple.installer+xml\napplication/vnd.mozilla.xul+xml\napplication/vnd.ms-excel\napplication/vnd.ms-fontobject\napplication/vnd.ms-powerpoint\napplication/vnd.oasis.opendocument.presentation\napplication/vnd.oasis.opendocument.spreadsheet\napplication/vnd.oasis.opendocument.text\napplication/vnd.openxmlformats-officedocument.presentationml.presentation\napplication/vnd.openxmlformats-officedocument.spreadsheetml.sheet\napplication/vnd.openxmlformats-officedocument.wordprocessingml.document\napplication/vnd.rar\napplication/vnd.visio\napplication/x-7z-compressed\napplication/x-abiword\napplication/x-bzip\napplication/x-bzip2\napplication/x-freearc\napplication/x-httpd-php\napplication/x-tar\napplication/x-www-form-urlencoded\napplication/xhtml+xml\napplication/xml\napplication/zip\napplication/zstd\naudio/*\nfont/*\nimage/*\nmultipart/form-data\ntext/plain\ntext/calendar\ntext/css\ntext/csv\ntext/rtf\nvideo/*",
     "witsec-mailform-attachments-extensions": "avi\nbmp\ncer\ncfg\ncss\ncsv\ncur\ndoc\ndocx\neml\nemlx\nfnt\nfon\ngif\nh264\nico\nini\njpeg\njpg\nkey\nlog\nmid\nmkv\nmov\nmp3\nmp4\nmpa\nmpeg\nmpg\nmsg\nodp\nods\nodt\nogg\notf\npdf\npng\npps\nppt\npptx\nps\npsd\nrss\nrtf\nsvg\ntif\ntiff\nttf\ntxt\nvcf\nwav\nwebm\nwebp\nwma\nwmv\nwpd\nxls\nxlsx",
     "witsec-mailform-allowedhtml": "b,br,i,p,u",
-    "witsec-mailform-recaptcha-hidebadge": false
+    "witsec-mailform-recaptcha-hidebadge": false,
+    "witsec-search-excluded-sections": "",
+    "witsec-search-excluded-pages": "404.html"
   },
   "pages": {
     "index.html": {
@@ -564,133 +564,108 @@
           "_params": {}
         },
         {
-          "alias": false,
+          "_name": "design-block",
+          "_sourceTheme": "mobirise5",
           "_styles": {
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 1rem)",
-              "padding-bottom": "(@paddingBottom * 1rem)",
-              ".carousel": {
-                "height": "800px",
-                "img": {
-                  "width": "100%",
-                  "height": "100%",
-                  "object-fit": "cover"
-                }
-              },
-              ".carousel-item, .carousel-inner": {
-                "height": "100%"
-              }
-            },
-            "& when (@fullScreen)": {
-              "padding-top": "0",
-              "padding-bottom": "0",
-              ".carousel": {
-                "width": "100%"
-              },
-              ".carousel-inner": {
-                "display": "flex",
-                "align-content": "center",
-                "align-items": "center"
-              },
-              ".carousel-item img": {
-                "height": "100vh",
-                "object-fit": "cover"
-              }
-            },
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
             "background-color": "@bgColor",
-            ".carousel-caption": {
-              "bottom": "40px"
+            ".mbr-section": {
+              "text-align": "center",
+              "color": "#fff"
             },
-            ".mobi-mbri-arrow-next": {
-              "margin-left": "5px"
+            ".carousel": {
+              "margin": "0px 0",
+              "background": "@bgColor"
             },
-            ".mobi-mbri-arrow-prev": {
-              "margin-right": "5px"
+            ".carousel .item": {
+              "text-align": "center",
+              "overflow": "hidden",
+              "height": "475px"
             },
-            ".carousel-control:hover": {
-              "background": "#1b1b1b",
+            ".item img": {
+              "margin": "0 auto",
+              "width": "100%",
+              "height": "100%"
+            },
+            ".carousel .carousel-control": {
+              "width": "50px",
+              "height": "50px",
+              "background": "#000",
+              "margin": "auto 0",
+              "opacity": "0.8"
+            },
+            ".carousel .carousel-control:hover": {
+              "opacity": "0.9"
+            },
+            ".carousel .carousel-control i": {
+              "font-size": "41px",
+              "margin-top": "3px"
+            },
+            ".carousel-caption h3, .carousel-caption p": {
               "color": "#fff",
-              "opacity": "1"
+              "display": "inline-block",
+              "font-family": "'Signika', sans-serif",
+              "text-shadow": "none",
+              "margin-bottom": "20px"
             },
-            ".item-wrapper": {
-              "width": "100%"
+            ".carousel-caption h3": {
+              "background": "@tbgColor",
+              "padding": "12px 24px",
+              "font-size": "40px",
+              "text-transform": "none"
             },
-            "@media (max-width: 767px)": {
-              ".container .carousel-control": {
-                "margin-bottom": "0"
-              },
-              ".content-slider-wrap": {
-                "width": "100% !important"
-              }
-            },
-            ".container .carousel-indicators": {
-              "margin-bottom": "3px"
-            },
-            ".carousel-control": {
-              "top": "50%",
-              "width": "60px",
-              "height": "60px",
-              "margin-top": "-1.5rem",
-              "font-size": "22px",
-              "background-color": "rgba(0, 0, 0, 0.5)",
-              "border": "2px solid #fff",
-              "border-radius": "50%",
-              "transition": "all 0.3s",
-              "&.carousel-control-prev": {
-                "left": "0",
-                "margin-left": "2.5rem"
-              },
-              "&.carousel-control-next": {
-                "right": "0",
-                "margin-right": "2.5rem"
-              },
-              "@media (max-width: 767px)": {
-                "top": "auto",
-                "bottom": "1rem"
-              }
+            ".carousel-caption p": {
+              "background": "@stbgColor",
+              "padding": "10px 20px",
+              "font-size": "20px",
+              "font-weight": "300"
             },
             ".carousel-indicators": {
-              "position": "absolute",
-              "bottom": "0",
-              "margin-bottom": "1.5rem !important",
-              "li": {
-                "max-width": "15px",
-                "height": "15px",
-                "width": "15px",
-                "max-height": "15px",
-                "margin": "3px",
-                "background-color": "rgba(0, 0, 0, 0.5)",
-                "border": "2px solid #fff",
-                "border-radius": "50%",
-                "opacity": "0.5",
-                "transition": "all 0.3s",
-                "&.active, &:hover": {
-                  "opacity": "0.9"
-                },
-                "&::after, &::before": {
-                  "content": "none"
-                }
-              },
-              "&.ie-fix": {
-                "left": "50%",
-                "display": "block",
-                "width": "60%",
-                "margin-left": "-30%",
-                "text-align": "center"
-              },
-              "@media (max-width: 768px)": {
-                "display": "none !important"
-              }
+              "margin-top": "0px",
+              "margin-right": "0%",
+              "margin-left": "0%",
+              "position": "relative",
+              "background": "#ccc"
             },
-            "H5": {
-              "color": "#ff0000"
+            ".carousel-indicators div.active": {
+              "background": "@inbgColor",
+              "border-color": "@inbgColor",
+              "opacity": "10"
+            },
+            ".carousel .nav": {
+              "background": "#eee",
+              "font-family": "Signika"
+            },
+            ".carousel .nav a": {
+              "color": "#333",
+              "border-radius": "0",
+              "font-size": "85%",
+              "padding": "10px 16px",
+              "background": "transparent"
+            },
+            ".carousel .nav .active a": {
+              "color": "#fff",
+              "background": "@inbgColor"
+            },
+            ".carousel .nav strong": {
+              "display": "block",
+              "font-family": "'Roboto', sans-serif",
+              "font-size": "110%",
+              "text-transform": "uppercase"
+            },
+            "@media only screen and (max-width: 600px)": {
+              ".carousel-indicators": {
+                "display": "none"
+              }
             }
           },
-          "_name": "slider1",
-          "_sourceTheme": "mobirise5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"slider1\" group=\"Sliders & Galleries\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n    <mbr-parameters>\n        <input type=\"id\" name=\"sliderId\">\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"!fullScreen\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"!fullScreen\">\n        <header>Carousel</header>\n        <input type=\"checkbox\" title=\"Fade Effect\" name=\"fade\" checked>\n        <input type=\"checkbox\" title=\"Autoplay\" name=\"autoplay\" checked>\n        <input type=\"range\" title=\"Interval\" name=\"interval\" min=\"3\" max=\"10\" value=\"7\" step=\"1\" condition=\"autoplay\">\n        <header>Slide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showCaption\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#fafafa\" selected>\n    </mbr-parameters>\n    <div id=\"{{sliderId}}\" class=\"carousel slide\" mbr-class=\"{'carousel-fade': fade}\" data-ride=\"{{autoplay ? 'carousel' : false}}\" data-bs-ride=\"{{autoplay ? 'carousel' : false}}\" data-interval=\"{{interval*1000}}\" data-bs-interval=\"{{interval*1000}}\">\n        <ol class=\"carousel-indicators\">\n            <li data-target=\"#{{sliderId}}\" data-bs-target=\"#{{sliderId}}\" data-slide-to=\"0\" data-bs-slide-to=\"0\" class=\"active\"></li>\n            <li data-target=\"#{{sliderId}}\" data-bs-target=\"#{{sliderId}}\" data-slide-to=\"1\" data-bs-slide-to=\"1\"></li>\n            <li data-target=\"#{{sliderId}}\" data-bs-target=\"#{{sliderId}}\" data-slide-to=\"2\" data-bs-slide-to=\"2\"></li>\n        </ol>\n        <div class=\"carousel-inner\">\n            <div class=\"carousel-item slider-image item active\">\n                <div class=\"item-wrapper\">\n                    <img class=\"d-block w-100\" src=\"@PROJECT_PATH@/assets/images/mbr-2.jpg\" alt=\"Garage Cars\">\n                    <div class=\"mbr-overlay\" mbr-if=\"overlay\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n                    </div>\n                    <div class=\"carousel-caption\" mbr-if=\"showCaption || showText\">\n                        <h5 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-if=\"showCaption\" mbr-theme-style=\"display-5\"><b>Dịch Vụ Chăm Sóc Xe ÔTô</b></h5>\n                        <p class=\"mbr-section-text mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-7\">Click on the image to edit slides.</p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"carousel-item slider-image item\">\n                <div class=\"item-wrapper\">\n                    <img class=\"d-block w-100\" src=\"@PROJECT_PATH@/assets/images/mbr-3.jpg\" alt=\"Mobirise Website Builder\">\n                    <div class=\"mbr-overlay\" mbr-if=\"overlay\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n                    </div>\n                    <div class=\"carousel-caption\" mbr-if=\"showCaption || showText\">\n                        <h5 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-if=\"showCaption\" mbr-theme-style=\"display-5\"><b>Tân Trang, Làm Đồng Khung Xe ÔTô</b></h5>\n                        <p class=\"mbr-section-text mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-7\">Click on the image to edit slides.</p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"carousel-item slider-image item\">\n                <div class=\"item-wrapper\">\n                    <img class=\"d-block w-100\" src=\"@PROJECT_PATH@/assets/images/mbr-4.jpg\" alt=\"Mobirise Website Builder\">\n                    <div class=\"mbr-overlay\" mbr-if=\"overlay\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n                    </div>\n                    <div class=\"carousel-caption\" mbr-if=\"showCaption || showText\">\n                        <h5 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-if=\"showCaption\" mbr-theme-style=\"display-5\"><b>Nâng Cấp Hệ Thống Máy ÔTô</b></h5>\n                        <p class=\"mbr-section-text mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-7\">Click on the image to edit slides.</p>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <a class=\"carousel-control carousel-control-prev\" href=\"#{{sliderId}}\" role=\"button\" data-slide=\"prev\" data-bs-slide=\"prev\">\n            <span class=\"mobi-mbri mobi-mbri-arrow-prev\" aria-hidden=\"true\"></span>\n            <span class=\"sr-only visually-hidden\">Previous</span>\n        </a>\n        <a class=\"carousel-control carousel-control-next\" href=\"#{{sliderId}}\" role=\"button\" data-slide=\"next\" data-bs-slide=\"next\">\n            <span class=\"mobi-mbri mobi-mbri-arrow-next\" aria-hidden=\"true\"></span>\n            <span class=\"sr-only visually-hidden\">Next</span>\n        </a>\n    </div>\n</section>",
-          "_cid": "ubXLbprk3H",
-          "_anchor": "slider1-1",
+          "_customHTML": "<section data-bs-version=\"5.1\" mbr-id=\"_slider_with_tab\" class=\"mbr-section slider_with_text_button\" mbr-class=\"{\n         'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n      <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n      <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n      <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#f4f1f1\">\n      <input type=\"color\" title=\"Title Bg Color\" name=\"tbgColor\" value=\"#064800\">\n      <input type=\"color\" title=\"SubTitle Bg Color\" name=\"stbgColor\" value=\"#000326\">\n      <input type=\"color\" title=\"Indicator Bg Color\" name=\"inbgColor\" value=\"#ff0000\">\n      <input type=\"checkbox\" title=\"Show Title\" name=\"showtitle\">\n      <input type=\"checkbox\" title=\"Show Sub Title\" name=\"showsubtitle\" checked>\n      <input type=\"checkbox\" title=\"Show Navigator\" name=\"shownavi\" checked>\n      <select title=\"Content Width\" name=\"widthContent\">\n            <option value=\"1\" selected>Full Width</option>\n            <option value=\"2\">None Full Width</option>\n      </select>\n      <select title=\"Image Ratio\" name=\"imgratio\" mbr-if=\"widthContent == '1'\">\n            <option value=\"fill\" selected>Fill</option>\n            <option value=\"contain\">Contain</option>\n            <option value=\"cover\">Cover</option>\n        <option value=\"scale-down\">Scale down</option>\n                <option value=\"none\">None</option>\n      </select>\n      <select title=\"Slider Count\" name=\"slidercount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n\t\t\t      <option value=\"4\">4</option>\n\t\t\t      <option value=\"5\">5</option>\n            <option value=\"6\" selected>6</option>\n      </select>\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n <div mbr-class=\"{ 'fullwidth': widthContent == 1, 'container': widthContent == 2}\">  \n\n\t\t\t<div id=\"myCarousel2singa\" class=\"carousel slide\" data-ride=\"carousel\" data-bs-ride=\"carousel\">\n\t\t\t\t<!-- Wrapper for carousel items -->\n\t\t\t\t<div class=\"carousel-inner\">\n\t\t\t\t\t<div class=\"item carousel-item active\" mbr-if=\"slidercount > 0\">\n\t\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/mbr-9.jpg\" style=\"object-fit:{{imgratio}}\" alt=\"Garage Cars\">\n\t\t\t\t\t\t<div class=\"carousel-caption\">\n\t\t\t\t\t\t\t<h3 mbr-if=\"showtitle\"><b>Đào Tạo Thiết Kế Website</b></h3>\n\t\t\t\t\t\t\t<p mbr-if=\"showsubtitle\"><b>Chuyên Làm Đồng Khung Xe ÔTô</b></p>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\t\n\t\t\t\t\t<div class=\"item carousel-item\" mbr-if=\"slidercount > 1\">\n\t\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/mbr-10.jpg\" style=\"object-fit:{{imgratio}}\" alt=\"Garage Cars\">\n\t\t\t\t\t\t<div class=\"carousel-caption\">\n\t\t\t\t\t\t\t<h3 mbr-if=\"showtitle\"><b>Thuê Bao QR WEBSITE</b></h3>\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<p mbr-if=\"showsubtitle\"><b>Sửa Chữa Đại Tu Động Cơ Xe ÔTô</b></p>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"item carousel-item\" mbr-if=\"slidercount > 2\">\n\t\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/mbr-11.jpg\" style=\"object-fit:{{imgratio}}\" alt=\"Garage Cars\">\n\t\t\t\t\t\t<div class=\"carousel-caption\">\n\t\t\t\t\t\t\t<h3 mbr-if=\"showtitle\"><b>Chuyển Giao Công Nghệ Web 4.0</b></h3>\n\t\t\t\t\t\t\t<p mbr-if=\"showsubtitle\"><b>Sửa Chữa Điều Hòa Xe ÔTô</b></p>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"item carousel-item\" mbr-if=\"slidercount > 3\">\n\t\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/mbr-3.jpg\" style=\"object-fit:{{imgratio}}\" alt=\"Garage Cars\">\n\t\t\t\t\t\t<div class=\"carousel-caption\">\n\t\t\t\t\t\t\t<h3 mbr-if=\"showtitle\"><b>Chuyển Đổi Số Doanh Nghiệp</b></h3>\n\t\t\t\t\t\t\t<p mbr-if=\"showsubtitle\"><b>Chuyên Bảo Dưỡng Xe ÔTô Định Kỳ</b></p>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"item carousel-item\" mbr-if=\"slidercount > 4\">\n\t\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/mbr-4.jpg\" style=\"object-fit:{{imgratio}}\" alt=\"Garage Cars\">\n\t\t\t\t\t\t<div class=\"carousel-caption\">\n\t\t\t\t\t\t\t<h3 mbr-if=\"showtitle\"><b>Gia Công Phần Mềm Máy Tính</b></h3>\n\t\t\t\t\t\t\t<p mbr-if=\"showsubtitle\"><b>Chuyên Sửa Chữa Gầm Máy ÔTô</b></p>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"item carousel-item\" mbr-if=\"slidercount > 5\">\n\t\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/mbr-1.jpg\" style=\"object-fit:{{imgratio}}\" alt=\"Garage Cars\">\n\t\t\t\t\t\t<div class=\"carousel-caption\">\n\t\t\t\t\t\t\t<h3 mbr-if=\"showtitle\"><b>Quản Trị Hệ Thống Mạng Máy Tính</b></h3>\n\t\t\t\t\t\t\t<p mbr-if=\"showsubtitle\"><b>Nhận Hồ Sơ Dạy Lái &amp; Bảo Dưỡng ÔTô</b></p>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<!-- End Carousel Inner -->\n\t\t\t\t<div class=\"nav nav-pills nav-justified carousel-indicators\" mbr-if=\"slidercount > 0\">\n\t\t\t\t\t<div data-target=\"#myCarousel2singa\" data-bs-target=\"#myCarousel2singa\" data-slide-to=\"0\" data-bs-slide-to=\"0\" class=\"nav-item active\" mbr-if=\"slidercount > 0\" mbr-text=\"\"><a href=\"#\" class=\"nav-link\"><strong>LÀM ĐỒNG</strong>Làm Đồng Khung Xe ÔTô</a></div>\n\t\t\t\t\t<div data-target=\"#myCarousel2singa\" data-bs-target=\"#myCarousel2singa\" data-slide-to=\"1\" data-bs-slide-to=\"1\" class=\"nav-item\" mbr-if=\"slidercount > 1\" mbr-text=\"\"><a href=\"#\" class=\"nav-link\"><strong>ĐỘNG CƠ</strong>Đại Tu Động Cơ ÔTô</a></div>\n\t\t\t\t\t<div data-target=\"#myCarousel2singa\" data-bs-target=\"#myCarousel2singa\" data-slide-to=\"2\" data-bs-slide-to=\"2\" class=\"nav-item\" mbr-if=\"slidercount > 2\" mbr-text=\"\"><a href=\"#\" class=\"nav-link\"><strong>ĐIỀU HÒA</strong>Chuyên Điều Hòa ÔTô</a></div>\n\t\t\t\t\t<div data-target=\"#myCarousel2singa\" data-bs-target=\"#myCarousel2singa\" data-slide-to=\"3\" data-bs-slide-to=\"3\" class=\"nav-item\" mbr-if=\"slidercount > 3\" mbr-text=\"\"><a href=\"#\" class=\"nav-link\"><strong>BẢO DƯỠNG</strong>Bảo Dưỡng ÔTô Định Kỳ</a></div>\n\t\t\t\t\t<div data-target=\"#myCarousel2singa\" data-bs-target=\"#myCarousel2singa\" data-slide-to=\"4\" data-bs-slide-to=\"4\" class=\"nav-item\" mbr-if=\"slidercount > 4\" mbr-text=\"\"><a href=\"#\" class=\"nav-link\"><strong>GẦM MÁY</strong>Sửa Chữa Gầm Máy ÔTô</a></div>\n\t\t\t\t\t<div data-target=\"#myCarousel2singa\" data-bs-target=\"#myCarousel2singa\" data-slide-to=\"5\" data-bs-slide-to=\"5\" class=\"nav-item\" mbr-if=\"slidercount > 5\" mbr-text=\"\"><a href=\"#\" class=\"nav-link\"><strong>ĐÀO TẠO</strong>Đào Tạo Nghề ÔTô</a></div>\n\t\t\t\t</div>\n              <!-- Carousel controls -->\n\t\t\t\t<a class=\"carousel-control left carousel-control-prev\" href=\"#myCarousel2singa\" data-slide=\"prev\" data-bs-slide=\"prev\" mbr-if=\"slidercount > 1 &amp;&amp; shownavi\">\n\t\t\t\t\t<i class=\"fa fa-angle-left fas\"></i>\n\t\t\t\t</a>\n\t\t\t\t<a class=\"carousel-control right carousel-control-next\" href=\"#myCarousel2singa\" data-slide=\"next\" data-bs-slide=\"next\" mbr-if=\"slidercount > 1 &amp;&amp; shownavi\">\n\t\t\t\t\t<i class=\"fa fa-angle-right fas\"></i>\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t\n\t</div>\n \n  \n</section>",
+          "_JSplaceholders": [],
+          "_PHPplaceholders": [],
+          "_anchor": "design-block-7",
+          "_isUserblock": true,
+          "_cid": "ubZnzZsVEC",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -967,7 +942,7 @@
           },
           "_name": "features12",
           "_sourceTheme": "mobirise4",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features12\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Icons\" name=\"showIcons\" checked>\n        <input type=\"range\" inline title=\"Media Size\" name=\"mediaSize\" min=\"10\" max=\"60\" step=\"1\" value=\"50\">\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"2\">2</option>\n            <option value=\"4\" selected>4</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/mbr-4.jpg\" parallax selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\">\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <h2 class=\"mbr-section-title pb-2 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>Quy Trình Làm Việc Của Chúng Tôi</b></h2>\n        <h3 class=\"mbr-section-subtitle pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">Cho dù chiếc xe của bạn cần dịch vụ thường xuyên hoặc sửa chữa khẩn cấp, bạn có thể tin tưởng vào đội ngũ chuyên gia của chúng tôi.\n        </h3>\n\n        <div class=\"media-container-row pt-5\">\n            <div class=\"block-content align-right\">\n                <div class=\"card pl-3 pr-3\" mbr-class=\"{'pb-5':cardsAmount > 2}\">\n                    <div class=\"mbr-card-img-title\">\n                        <div class=\"card-img pb-3\" mbr-if=\"showIcons\">\n                             <span mbr-icon class=\"mbr-iconfont mbrib-edit\"></span>\n                        </div>\n                        <div class=\"mbr-crt-title\">\n                            <h4 class=\"card-title py-2 mbr-crt-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".mbr-crt-title\">#1. Lên Lịch Bảo Dưỡng</h4>\n                        </div>\n                    </div>                \n\n                    <div class=\"card-box\">\n                        <p class=\"mbr-text mbr-section-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-section-text\">Bạn có thể trực tiếp đến xưởng dịch vụ của chúng tôi hoặc để lại thông tin của bạn, đội ngũ của chúng tôi sẽ lên lịch và liên hệ sắp sắp xếp cuộc hẹn với bạn.</p>\n                    </div>\n                </div>\n\n                <div class=\"card pl-3 pr-3\" mbr-if=\"cardsAmount > 2\">\n                    <div class=\"mbr-card-img-title\">\n                        <div class=\"card-img pb-3\" mbr-if=\"showIcons\">\n                            <span mbr-icon class=\"mbr-iconfont mbrib-features\"></span>\n                        </div>\n                        <div class=\"mbr-crt-title\">\n                            <h4 class=\"card-title py-2 mbr-crt-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".mbr-crt-title\">#2. Chuẩn Đoán Sự Cố</h4>\n                        </div>\n                    </div>\n                    <div class=\"card-box\">\n                        <p class=\"mbr-text mbr-section-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-section-text\">Chúng tôi đã đầu tư vào tất cả các công cụ chuyên môn cũng như phần mềm chuẩn đoán sự cố luôn cập nhật mới nhất để xử lý những tình huống kỹ thuật phức tạp.</p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"mbr-figure m-auto\" mbr-style=\"{'width': mediaSize + '%'}\">\n                <img src=\"@PROJECT_PATH@/assets/images/car-services.png\" alt=\"Garage Cars\" title>\n            </div>\n\n            <div class=\"block-content align-left\">\n                <div class=\"card pl-3 pr-3\" mbr-class=\"{'pb-5':cardsAmount > 2}\">\n                    <div class=\"mbr-card-img-title\">\n                        <div class=\"card-img pb-3\" mbr-if=\"showIcons\">\n                             <span mbr-icon class=\"mbr-iconfont mbrib-setting\"></span>\n                        </div>\n                        <div class=\"mbr-crt-title\">\n                            <h4 class=\"card-title py-2 mbr-crt-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".mbr-crt-title\">#3. Sửa Chữa Vấn Đề</h4>\n                        </div>\n                    </div>                \n\n                    <div class=\"card-box\">\n                        <p class=\"mbr-text mbr-section-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-section-text\">Chúng tôi là một trong những xưởng sửa chữa Ôtô hàng đầu tại Sài Gòn. Tất cả các dịch vụ cơ khí luôn được thực hiện bởi các thợ máy có trình độ chuyên môn cao.</p>\n                    </div>\n                </div>\n\n                <div class=\"card pl-3 pr-3\" mbr-if=\"cardsAmount > 2\">\n                    <div class=\"mbr-card-img-title\">\n                        <div class=\"card-img pb-3\" mbr-if=\"showIcons\">\n                            <span mbr-icon class=\"mbr-iconfont mbrib-sites\"></span>\n                        </div>\n                        <div class=\"mbr-crt-title\">\n                            <h4 class=\"card-title py-2 mbr-crt-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".mbr-crt-title\">#4. Hoàn Thành &amp; Bàn Giao</h4>\n                        </div>\n                    </div>\n                    <div class=\"card-box\">\n                        <p class=\"mbr-text mbr-section-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-section-text\">Chúng tôi luôn nổ lực hết sức để hoàn thành nội dung công việc và bàn giao xe của bạn đúng hẹn, đồng thời vệ sinh sạch sẽ xe trước khi giao xe cho khách hàng.</p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features12\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Icons\" name=\"showIcons\" checked>\n        <input type=\"range\" inline title=\"Media Size\" name=\"mediaSize\" min=\"10\" max=\"60\" step=\"1\" value=\"50\">\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"2\">2</option>\n            <option value=\"4\" selected>4</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/mbr-4.jpg\" parallax selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\">\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <h2 class=\"mbr-section-title pb-2 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>Quy Trình Làm Việc Của Chúng Tôi</b></h2>\n        <h3 class=\"mbr-section-subtitle pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">Cho dù chiếc xe của bạn cần dịch vụ thường xuyên hoặc sửa chữa khẩn cấp, bạn có thể tin tưởng vào đội ngũ chuyên gia của chúng tôi.\n        </h3>\n\n        <div class=\"media-container-row pt-5\">\n            <div class=\"block-content align-right\">\n                <div class=\"card pl-3 pr-3\" mbr-class=\"{'pb-5':cardsAmount > 2}\">\n                    <div class=\"mbr-card-img-title\">\n                        <div class=\"card-img pb-3\" mbr-if=\"showIcons\">\n                             <span mbr-icon class=\"mbr-iconfont mbrib-edit\"></span>\n                        </div>\n                        <div class=\"mbr-crt-title\">\n                            <h4 class=\"card-title py-2 mbr-crt-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".mbr-crt-title\"><b>#1. Lên Lịch Bảo Dưỡng</b></h4>\n                        </div>\n                    </div>                \n\n                    <div class=\"card-box\">\n                        <p class=\"mbr-text mbr-section-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-section-text\">Bạn có thể trực tiếp đến xưởng dịch vụ của chúng tôi hoặc để lại thông tin của bạn, đội ngũ của chúng tôi sẽ lên lịch và liên hệ sắp sắp xếp cuộc hẹn với bạn.</p>\n                    </div>\n                </div>\n\n                <div class=\"card pl-3 pr-3\" mbr-if=\"cardsAmount > 2\">\n                    <div class=\"mbr-card-img-title\">\n                        <div class=\"card-img pb-3\" mbr-if=\"showIcons\">\n                            <span mbr-icon class=\"mbr-iconfont mbrib-features\"></span>\n                        </div>\n                        <div class=\"mbr-crt-title\">\n                            <h4 class=\"card-title py-2 mbr-crt-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".mbr-crt-title\"><b>#2. Chuẩn Đoán Sự Cố</b></h4>\n                        </div>\n                    </div>\n                    <div class=\"card-box\">\n                        <p class=\"mbr-text mbr-section-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-section-text\">Chúng tôi đã đầu tư vào tất cả các công cụ chuyên môn cũng như phần mềm chuẩn đoán sự cố luôn cập nhật mới nhất để xử lý những tình huống kỹ thuật phức tạp.</p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"mbr-figure m-auto\" mbr-style=\"{'width': mediaSize + '%'}\">\n                <img src=\"@PROJECT_PATH@/assets/images/car-services.png\" alt=\"Garage Cars\" title>\n            </div>\n\n            <div class=\"block-content align-left\">\n                <div class=\"card pl-3 pr-3\" mbr-class=\"{'pb-5':cardsAmount > 2}\">\n                    <div class=\"mbr-card-img-title\">\n                        <div class=\"card-img pb-3\" mbr-if=\"showIcons\">\n                             <span mbr-icon class=\"mbr-iconfont mbrib-setting\"></span>\n                        </div>\n                        <div class=\"mbr-crt-title\">\n                            <h4 class=\"card-title py-2 mbr-crt-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".mbr-crt-title\"><b>#3. Sửa Chữa Vấn Đề</b></h4>\n                        </div>\n                    </div>                \n\n                    <div class=\"card-box\">\n                        <p class=\"mbr-text mbr-section-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-section-text\">Chúng tôi là một trong những xưởng sửa chữa Ôtô hàng đầu tại Sài Gòn. Tất cả các dịch vụ cơ khí luôn được thực hiện bởi các thợ máy có trình độ chuyên môn cao.</p>\n                    </div>\n                </div>\n\n                <div class=\"card pl-3 pr-3\" mbr-if=\"cardsAmount > 2\">\n                    <div class=\"mbr-card-img-title\">\n                        <div class=\"card-img pb-3\" mbr-if=\"showIcons\">\n                            <span mbr-icon class=\"mbr-iconfont mbrib-sites\"></span>\n                        </div>\n                        <div class=\"mbr-crt-title\">\n                            <h4 class=\"card-title py-2 mbr-crt-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".mbr-crt-title\"><b>#4. Hoàn Thành &amp; Bàn Giao</b></h4>\n                        </div>\n                    </div>\n                    <div class=\"card-box\">\n                        <p class=\"mbr-text mbr-section-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-section-text\">Chúng tôi luôn nổ lực hết sức để hoàn thành nội dung công việc và bàn giao xe của bạn đúng hẹn, đồng thời vệ sinh sạch sẽ xe trước khi giao xe cho khách hàng.</p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "ubYkhy9B36",
           "_anchor": "Process",
           "_protectedParams": [],
