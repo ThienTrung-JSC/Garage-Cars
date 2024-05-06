@@ -824,7 +824,8 @@
               "position": "absolute",
               "bottom": "0",
               "opacity": "0",
-              "padding": "10px"
+              "padding": "10px",
+              "font-family": "Signika"
             },
             ".box:hover .text": {
               "opacity": "1",
